@@ -110,7 +110,7 @@ function articles_intro($text, $len = 255){
 //
 // Генерация шаблона
 //
-function template($fileName, $vars = array())
+function template($file, $vars = array())
 {
     // Установка переменных для шаблона
     foreach ($vars as $k => $v) {
@@ -119,6 +119,6 @@ function template($fileName, $vars = array())
 
     // Генерация HTML в строку
     ob_start();
-    include $fileName;
+    include $file;
     return ob_get_clean();
 }
