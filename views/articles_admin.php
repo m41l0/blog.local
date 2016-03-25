@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Мой Первый Блог</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Мой Первый Блог</h1>
         <div>
-         <a href="index.php?action=add&id=<?=$a['id']?>">Добавить статью</a>
+         <a href="../admin/index.php?action=add">Добавить статью</a>
           <table class="admin-table">
               <tr>
                   <th>Дата</th>
@@ -23,10 +23,10 @@
                   <td><?=$a['date']?></td>
                   <td><?=$a['title']?></td>
                   <td>
-                      <a href="index.php?action=edit&id=<?=$a['id']?>">Редактировать</a>
+                      <a href="../admin/index.php?action=edit&id=<?=$a['id']?>">Редактировать</a>
                   </td>
                   <td>
-                      <a href="index.php?action=delete&id=<?=$a['id']?>">Удалить</a>
+                      <a href="../admin/index.php?action=delete&id=<?=$a['id']?>">Удалить</a>
                   </td>
               </tr>
               <?php endforeach ?>
